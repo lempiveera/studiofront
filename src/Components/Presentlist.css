@@ -3,17 +3,17 @@
   background-color: #c7befa;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction:row;
+  align-items:center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
 .Head {
-  font-size: 70px;
+  font-size: 50px;
   color: #c7fff1;
-  text-shadow: -150px -75px #7f7c97b0;
+  text-shadow: -150px -55px #7f7c97b0;
 }
 
 .Tab {
@@ -23,7 +23,7 @@
 .List {
   font-size: 25px;
   color: #c7fff1;
-  text-shadow: 2px 2px #7f7c9738;
+  text-shadow: 2px 3px #7f7c974b;
   /*margin-bottom: 5px; hnngh cant get more margin for the list so it would be easier to read
   i wanna keep the shadow things that extra i think it looks fun*/
 }
