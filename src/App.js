@@ -4,6 +4,9 @@ import React, { useState } from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Tab from '@material-ui/core/Tab';
 import Tabs from '@material-ui/core/Tabs';
+import Downstairs from './Components/Downstairs';
+import Upstairs from './Components/Upstairs';
+import Sumu from './Components/Sumu';
 //import Typography from '@material-ui/core/Typography';
 
 function App() {
@@ -20,14 +23,14 @@ function App() {
         <Tabs textColor="inherit" indicatorColor="primary" value={value} onChange={handleChange}>
           <Tab value="one" label="Current situation"/>
           <Tab value="two" label="Downstairs" />
-          <Tab value="three" label="Upstrais" />
+          <Tab value="three" label="Upstairs" />
           <Tab value="four" label="Sumu" />
         </Tabs>
       </AppBar>
         {value === 'one' && <Presentlist />}
-        {value === 'two' && <Presentlist />}
-        {value === 'three' && <Presentlist />}
-        {value === 'four' && <Presentlist />}
+        {value === 'two' && <Downstairs />}
+        {value === 'three' && <Upstairs />}
+        {value === 'four' && <Sumu />}
     </div>
   );
 }
